@@ -2,50 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Chaudhary's Data Science Projects</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-        .project {
-            margin: 20px 0;
-        }
-        a {
-            color: #0275d8;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1>Welcome to Abhishek Chaudhary's Project Portfolio</h1>
-        <p>Explore my data science and machine learning projects</p>
-    </header>
-    <main>
-        <section class="project">
-            <h2>Iris Classification Project</h2>
-            <p>This was my very first machine learning project where I implemented logistic regression to classify the famous Iris dataset. I keep this project as a reminder of my journey into the world of machine learning.</p>
-            <a href="/workspaces/abhishek-chaudhary26.github.io/iris.html">View Project Details</a>
-        </section>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
 
-        <section class="project">
-            <h2>Car Price Prediction Project</h2>
-            <p>Using a random forest model, I achieved 78% accuracy in predicting car prices based on various features such as manufacturer, production year, and mileage.</p>
-            <a href="path/to/your/CarPriceProject.html">View Project Details</a>
-        </section>
-    </main>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>Aspiring Data Scientist | B.Tech CSE</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" data-aos="fade-up" data-aos-duration="1500">
+        <h2>About Me</h2>
+        <p>Passionate Data Scientist and a lifelong learner.</p>
+    
+        <img src="profile.jpg" alt="Your Profile">
+        <ul>
+            <li>Python</li>
+            <li>Machine Learning</li>
+            <li>Data Visualization</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Iris Classification</h3>
+            <p>A machine learning project that predicts flower species.</p>
+            <a href="https://github.com/yourusername/project-link">View on GitHub</a>
+        </div>
+        <!-- Add more projects here -->
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download>Download My Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
