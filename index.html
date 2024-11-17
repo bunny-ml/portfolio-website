@@ -81,25 +81,6 @@
         </form>
     </section>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    emailjs.init("9aT6a3EglnEk1mo3yueFy"); // Replace with your User ID
-
-    const form = document.getElementById("contact-form");
-
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        const formData = new FormData(form);
-        
-        emailjs.sendForm('service_mw70vsn', 'template_ugo0ijk', formData)
-            .then(function(response) {
-                alert("Email sent successfully!");
-            }, function(error) {
-                alert("Failed to send email. Please try again later.");
-            });
-    });
-</script>
 
     <!-- Footer -->
     <footer>
