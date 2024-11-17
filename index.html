@@ -4,79 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Science Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 </head>
 <body>
     <!-- Particles Background -->
     <div id="particles-js"></div>
 
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button id="theme-toggle">🌙</button>
-    </header>
-
-    <!-- Home Section -->
-    <section id="home">
-        <div class="intro">
-            <h1>Hi, I'm [Your Name]</h1>
-            <p>Aspiring Data Scientist | B.Tech CSE</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" />
         </div>
+        <a href="#about">About</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="main-content">
+        <h1>About Me</h1>
+        <p>Hello! I'm a passionate Data Science student with a deep interest in Machine Learning, AI, and Data Analytics. I strive to solve complex problems using data-driven insights. Welcome to my portfolio!</p>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" data-aos="fade-up" data-aos-duration="1500">
-        <h2>About Me</h2>
-        <p>Passionate Data Scientist and a lifelong learner.</p>
-    
-        <img src="profile.jpg" alt="Your Profile">
-        <ul>
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>Data Visualization</li>
-        </ul>
+    <!-- Certificates Section -->
+    <section id="certificates" class="projects">
+        <h2>Certificates</h2>
+        <div class="card-container">
+            <div class="project-card">
+                <img src="images/certificate1.jpg" alt="Certificate 1">
+                <h3>Data Science Certification</h3>
+                <p>Completed a certification in Data Science from XYZ Academy.</p>
+                <a href="https://example.com/certificate1" target="_blank">View Certificate</a>
+            </div>
+            <div class="project-card">
+                <img src="images/certificate2.jpg" alt="Certificate 2">
+                <h3>Machine Learning Specialization</h3>
+                <p>Completed a specialization in Machine Learning from Stanford University.</p>
+                <a href="https://example.com/certificate2" target="_blank">View Certificate</a>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Iris Classification</h3>
-            <p>A machine learning project that predicts flower species.</p>
-            <a href="https://github.com/yourusername/project-link">View on GitHub</a>
+        <div class="card-container">
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h3>Project 1: Iris Classification</h3>
+                <p>Built a classification model for the Iris dataset using Logistic Regression.</p>
+                <a href="https://github.com/yourusername/iris-classification" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h3>Project 2: Sentiment Analysis</h3>
+                <p>Developed a sentiment analysis model using NLP techniques on social media data.</p>
+                <a href="https://github.com/yourusername/sentiment-analysis" target="_blank">View Project</a>
+            </div>
         </div>
-        <!-- Add more projects here -->
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <a href="resume.pdf" download>Download My Resume</a>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+    <section id="contact" class="main-content">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or want to get in touch, feel free to send me a message directly!</p>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Send Message">
         </form>
     </section>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    emailjs.init("9aT6a3EglnEk1mo3yueFy"); // Replace with your User ID
+
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        
+        emailjs.sendForm('service_mw70vsn', 'template_ugo0ijk', formData)
+            .then(function(response) {
+                alert("Email sent successfully!");
+            }, function(error) {
+                alert("Failed to send email. Please try again later.");
+            });
+    });
+</script>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Your Name. All rights reserved. | <a href="https://github.com/yourusername">GitHub</a> | <a href="https://www.linkedin.com/in/yourname/">LinkedIn</a></p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
