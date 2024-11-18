@@ -107,4 +107,22 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 });
 
 
+// Get the form element
+const contactForm = document.getElementById('contactForm');
+
+// Add a keydown event listener
+contactForm.addEventListener('keydown', function (event) {
+    // Check if the key is "Enter"
+    if (event.key === 'Enter') {
+        // Prevent default action only if inside a non-textarea input
+        if (event.target.tagName !== 'TEXTAREA') {
+            event.preventDefault();
+            contactForm.submit(); // Submit the form
+        }
+    }
+});
+
+
+
+
 
