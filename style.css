@@ -16,118 +16,157 @@ body {
     height: 100%;
     z-index: -1;
 }
-/* Side Navigation Bar */
-.side-nav {
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #121212;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Top Header Bar */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
     position: fixed;
     top: 0;
-    right: 0; /* Aligns navigation to the right */
-    height: 100%; /* Full height */
-    width: 0; /* Start collapsed */
-    background-color: #333; /* Dark background */
-    overflow-x: hidden; /* Hide horizontal scroll */
-    transition: width 0.3s ease; /* Smooth open/close animation */
-    z-index: 200; /* Ensure it's above other elements */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 20px; /* Add padding at the top */
-}
-
-.side-nav .nav-links {
-    display: flex;
-    flex-direction: column; /* Stack links vertically */
     width: 100%;
-    padding: 20px 0;
-    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: 60px;
 }
 
-.side-nav a {
-    color: #bbb; /* Light gray color */
-    text-decoration: none; /* Remove underline */
+.top-header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-header .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.top-header .logo span {
     font-size: 18px;
+    font-weight: bold;
+}
+
+.cta-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
     padding: 10px 20px;
-    display: block; /* Make the links clickable over the full width */
-    transition: color 0.3s ease;
-}
-
-.side-nav a:hover {
-    color: #fff; /* Highlight text on hover */
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
-}
-
-/* Hamburger Button Styles */
-.hamburger {
-    position: fixed;
-    top: 15px;
-    right: 15px; /* Place on the top-right corner */
+    border-radius: 5px;
+    text-decoration: none; 
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    right: 3%;
     cursor: pointer;
-    z-index: 300; /* Ensure it's above the nav */
-    transition: transform 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-.hamburger .line {
-    width: 30px;
-    height: 3px;
-    background-color: #fff; /* White lines */
-    margin: 5px 0;
-    transition: transform 0.3s ease;
+.cta-button:hover {
+    background-color: #45a049;
 }
 
-/* Open Navigation State (Trigger for expanding the nav) */
-.side-nav.open {
-    width: 250px; /* Set the width of the side nav */
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    right: 3%;
 }
 
-/* Transform lines when the hamburger is clicked */
-.side-nav.open .hamburger .line:nth-child(1) {
-    transform: translateY(8px) rotate(45deg); /* Top line moves and rotates */
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
-.side-nav.open .hamburger .line:nth-child(2) {
-    opacity: 0; /* Middle line disappears */
+.navbar a:hover {
+    color: #4caf50;
 }
-
-.side-nav.open .hamburger .line:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg); /* Bottom line moves and rotates */
-}
-
 
 /* Section Styles */
 .main-content {
     text-align: center;
     padding: 100px 20px 50px;
 }
-/* Style for the Download Button */
-.main-content .download-btn {
-    display: inline-block; /* Makes the link look like a button */
-    padding: 15px 30px; /* Adds padding inside the button */
-    background-color: #333; /* Button background color (blue) */
-    color: #4caf50; /* Button text color (white) */
-    font-size: 1.2em; /* Increases font size */
-    font-weight: bold; /* Makes text bold */
-    text-decoration: none; /* Removes underline */
-    border-radius: 5px; /* Rounds the corners */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover animation */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin-top: 20px; /* Adds space above the button */
-}
 
-/* Hover and Active Effects for the Button */
-.main-content .download-btn:hover {
-    background-color: #333; /* Darker blue on hover */
-    transform: translateY(-2px); /* Subtle lift effect */
-}
-
-.main-content .download-btn:active {
-    transform: translateY(1px); /* Press effect */
-}
-
-/* Section Styles */
-.Skill {
-    
+/* Skills Section */
+.skills-section {
     text-align: center;
-    padding: 100px 20px 50px;
+    padding: 50px 20px;
+    background-color: #121212;
+    border: #121212;
+    background: transparent;
+    color: #fff;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-category {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-category:hover {
+    transform: scale(1.05);
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category ul li {
+    font-size: 1rem;
+    padding: 8px 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-category ul li::before {
+    content: '✓';
+    color: #4caf50;
+    font-size: 1.2rem;
 }
 
 .projects {
@@ -223,3 +262,11 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+
+/* Prevent content overlap with fixed header */
+.main-content, .projects, .Skill, #certificates, #contact {
+    padding-top: 80px; /* Matches header height + some extra space */
+}
+
+
