@@ -53,6 +53,8 @@ nav a:hover {
 
 /* Section Styles */
 .Skill {
+    width: 80%;
+    margin:0 auto;
     text-align: left;
     padding: 100px 20px 50px;
 }
