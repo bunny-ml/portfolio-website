@@ -19,15 +19,15 @@ body {
 
 /* Navigation Bar */
 nav {
-    display: center;
-    justify-content: space-between;
-    align-items: right;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out logo and links */
+    align-items: center; /* Center items vertically */
     padding: 15px;
     background-color: #333;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 100; /* Ensure the nav bar stays on top */
 }
 
 nav .logo img {
@@ -36,14 +36,14 @@ nav .logo img {
 }
 
 nav a {
-    color: #bbb;
-    text-decoration: none;
-    margin: 0 15px;
+    color: #bbb; /* Light gray color for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Add spacing between links */
     font-size: 18px;
 }
 
 nav a:hover {
-    color: #fff;
+    color: #fff; /* Highlight link on hover */
 }
 
 /* Section Styles */
