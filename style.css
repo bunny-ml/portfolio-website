@@ -17,45 +17,119 @@ body {
     z-index: -1;
 }
 
-/* Navigation Bar */
-nav {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space out logo and links */
-    align-items: center; /* Center items vertically */
-    padding: 15px;
-    background-color: #333;
+
+
+/* Side Navigation Bar */
+.side-nav {
     position: fixed;
     top: 0;
+    right: 0; /* Aligns navigation to the right */
+    height: 100%; /* Full height */
+    width: 0; /* Start collapsed */
+    background-color: #333; /* Dark background */
+    overflow-x: hidden; /* Hide horizontal scroll */
+    transition: width 0.3s ease; /* Smooth open/close animation */
+    z-index: 200; /* Ensure it's above other elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px; /* Add padding at the top */
+}
+
+.side-nav .nav-links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
     width: 100%;
-    z-index: 100; /* Ensure the nav bar stays on top */
+    padding: 20px 0;
+    text-align: center;
 }
 
-nav .logo img {
-    width: 50px;
-    height: 50px;
-}
-
-nav a {
-    color: #bbb; /* Light gray color for links */
+.side-nav a {
+    color: #bbb; /* Light gray color */
     text-decoration: none; /* Remove underline */
-    margin: 0 15px; /* Add spacing between links */
     font-size: 18px;
+    padding: 10px 20px;
+    display: block; /* Make the links clickable over the full width */
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #fff; /* Highlight link on hover */
+.side-nav a:hover {
+    color: #fff; /* Highlight text on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
 }
+
+/* Hamburger Button Styles */
+.hamburger {
+    position: fixed;
+    top: 15px;
+    right: 15px; /* Place on the top-right corner */
+    cursor: pointer;
+    z-index: 300; /* Ensure it's above the nav */
+    transition: transform 0.3s ease;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff; /* White lines */
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Open Navigation State (Trigger for expanding the nav) */
+.side-nav.open {
+    width: 250px; /* Set the width of the side nav */
+}
+
+/* Transform lines when the hamburger is clicked */
+.side-nav.open .hamburger .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); /* Top line moves and rotates */
+}
+
+.side-nav.open .hamburger .line:nth-child(2) {
+    opacity: 0; /* Middle line disappears */
+}
+
+.side-nav.open .hamburger .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); /* Bottom line moves and rotates */
+}
+
 
 /* Section Styles */
 .main-content {
     text-align: center;
     padding: 100px 20px 50px;
+}
+/* Style for the Download Button */
+.main-content .download-btn {
+    display: inline-block; /* Makes the link look like a button */
+    padding: 15px 30px; /* Adds padding inside the button */
+    background-color: #333; /* Button background color (blue) */
+    color: #4caf50; /* Button text color (white) */
+    font-size: 1.2em; /* Increases font size */
+    font-weight: bold; /* Makes text bold */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Rounds the corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover animation */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Adds space above the button */
+}
+
+/* Hover and Active Effects for the Button */
+.main-content .download-btn:hover {
+    background-color: #333; /* Darker blue on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.main-content .download-btn:active {
+    transform: translateY(1px); /* Press effect */
+}
 
 /* Section Styles */
 .Skill {
-    width: 80%;
-    margin:0 auto;
-    text-align: left;
+    
+    text-align: center;
     padding: 100px 20px 50px;
 }
 
@@ -83,7 +157,7 @@ nav a:hover {
     border-radius: 10px;
     width: 300px;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 6px hsla(0, 0%, 0%, 0.5);
     transition: transform 0.3s;
 }
 

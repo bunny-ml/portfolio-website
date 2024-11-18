@@ -74,3 +74,8 @@ particlesJS('particles-js', {
     },
     "retina_detect": true
 });
+
+function toggleNav() {
+    const nav = document.querySelector('.side-nav');
+    nav.classList.toggle('open');
+}
