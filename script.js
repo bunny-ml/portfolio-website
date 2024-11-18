@@ -75,6 +75,36 @@ particlesJS('particles-js', {
     "retina_detect": true
 });
 
+document.getElementById("contact-form").addEventListener("submit", async function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Form data collection
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // Sending the form data using fetch API
+    try {
+        const response = await fetch("https://formspree.io/f/xjkvokjd", {
+            method: "POST",
+            headers: {
+                Accept: "application/json",
+            },
+            body: formData,
+        });
+
+        if (response.ok) {
+            // Display success message
+            document.getElementById("form-response").style.display = "block";
+
+            // Reset the form
+            form.reset();
+        } else {
+            alert("Oops! There was a problem sending your message.");
+        }
+    } catch (error) {
+        alert("An error occurred. Please try again later.");
+    }
+});
 
 
 
