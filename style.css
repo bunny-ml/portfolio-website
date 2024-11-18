@@ -74,7 +74,8 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #45a049;
+    background-color: #4caf50;
+    transform: scale(1.05);
 }
 
 /* Navigation Bar */
