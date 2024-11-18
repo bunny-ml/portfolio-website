@@ -19,7 +19,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    display: fixed; /* Use flexbox for layout */
+    display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Space out logo and links */
     align-items: center; /* Center items vertically */
     padding: 15px;
