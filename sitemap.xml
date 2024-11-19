@@ -1,12 +1,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://abhishek-chaudhary26.github.io</loc>
+    <loc>https://abhishek-chaudhary26.github.io/</loc>
     <lastmod>2024-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://abhishek-chaudhary26.github.io/</loc>   <!-- update the site map for pages like blog.html etc  -->
+    <loc>https://abhishek-chaudhary26.github.io/</loc>
     <lastmod>2024-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
