@@ -19,7 +19,7 @@ particlesJS('particles-js', {
             }
         },
         "opacity": {
-            "value": 0.5,
+            "value": 1,
             "random": true,
             "anim": {
                 "enable": true,
@@ -32,12 +32,12 @@ particlesJS('particles-js', {
             "random": true,
             "anim": {
                 "enable": true,
-                "speed": 600,
+                "speed": 100,
                 "size_min": 0.1
             }
         },
         "line_linked": {
-            "enable": true,
+            "enable": false,
             "distance": 150,
             "color": "#ffffff",
             "opacity": 0.4,
@@ -63,7 +63,7 @@ particlesJS('particles-js', {
         "events": {
             "onhover": {
                 "enable": true,
-                "mode": "repulse"
+                "mode": "grab"
             },
             "onclick": {
                 "enable": true,

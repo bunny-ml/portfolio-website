@@ -33,7 +33,7 @@ body {
     padding: 10px 20px;
     background-color: #222;
     color: #fff;
-    position: fixed;
+    position: flex;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -329,4 +329,16 @@ footer a:hover {
 
 .education-item:hover {
     transform: scale(1.05);
+}
+
+
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+    
+}
+a:hover {
+    text-decoration: underline;
+    color: #4caf50;
 }
