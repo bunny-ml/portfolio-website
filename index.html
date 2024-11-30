@@ -56,18 +56,23 @@
             <img src="images/logo.png" alt="Logo">
             <span>Abhishek's Portfolio</span>
         </div>
-        <nav class="navbar">
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navbar" id="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#education">Education</a>
             <a href="#certificates">Certificates</a>
-            <a href="#skills">Skill's</a>
+            <a href="#skills">Skills</a>
             <a href="#blogs">Blog</a>
-        
             <a href="#contact">Contact Me</a>
+            <a href="resume.pdf" class="cta-button">Resume</a>
         </nav>
-        <a href="resume.pdf" class="cta-button">Resume</a>
+        
     </header>
     
     <!-- Particles Background -->
@@ -80,6 +85,9 @@
     <section id="about" class="main-content">
         <h1>About Me</h1>
         <p>Hi, I’m <b>Abhishek</b>, a 3rd-year B.Tech Computer Science student passionate about <b>Data Science, Machine Learning</b>, <br>and building impactful projects that solve real-world problems with innovative, data-driven solutions.</p>
+
+        
+        
     </section>
 
     <section id="projects" class="projects">
@@ -221,11 +229,11 @@
     <h2>Contact Me</h2>
     <form id="contact-form">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" autocomplete="on" required>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" autocomplete="off" required>
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <textarea id="message" name="message" rows="4" autocomplete="on" required></textarea>
         <input type="submit" value="Send Message">
         <p id="form-response" style="display:none; color: green;">Thank you! Your message has been sent.</p>
     </form>
