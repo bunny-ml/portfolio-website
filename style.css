@@ -36,9 +36,9 @@ body {
     position: flex;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    height: 60px;
+    height: 100%;
 }
 
 .top-header .logo {
@@ -74,7 +74,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #4caf50;
+    background-color: #fff;
     transform: scale(1.05);
 }
 
