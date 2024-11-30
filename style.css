@@ -57,6 +57,25 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+.cta-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; 
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    text-decoration: none;
+}
 .hamburger-menu {
     display: none; /* Hidden by default */
     flex-direction: column;
@@ -125,25 +144,7 @@ body {
     text-align: center;
     padding: 100px 20px 50px;
 }
-.cta-button {
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none; 
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-.cta-button:hover {
-    background-color: #fff;
-    transform: scale(1.05);
-    text-decoration: none;
-}
 
 /* Skills Section */
 .skills-section {
