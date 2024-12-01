@@ -116,7 +116,7 @@ body {
     .hamburger-menu {
         display: flex; /* Show hamburger menu on mobile */
         position: relative;
-        right: 5%;
+        right: 0%;
     }
 
     .navbar {
