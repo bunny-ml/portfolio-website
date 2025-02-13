@@ -1,8 +1,8 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
+    font-family: Poppins, sans-serif;
+    color: #eeeeee;
     background-color: #121212;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -16,27 +16,18 @@ body {
     height: 100%;
     z-index: -1;
 }
-/* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
-    background-color: #121212;
-    transition: background-color 0.3s, color 0.3s;
-}
+
 
 /* Top Header Bar */
 .top-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
     padding: 10px 20px;
-    background-color: #222;
+    background-color: #000022;
     color: #fff;
     position: flex;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+    /* z-index: 100; */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     height: 100%;
 }
@@ -66,7 +57,7 @@ body {
     text-decoration: none; 
     font-size: 16px;
     font-weight: bold;
-    position: relative;
+    position: center;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -78,7 +69,7 @@ body {
 }
 .hamburger-menu {
     display: none; /* Hidden by default */
-    flex-direction: column;
+    flex-direction: column-reverse;
     cursor: pointer;
 }
 
@@ -95,7 +86,8 @@ body {
     display: flex;
     gap: 20px;
     position: relative;
-    right: 3%;
+    
+    /* right: 3%; */
 }
 
 .navbar a {
@@ -144,7 +136,17 @@ body {
     text-align: center;
     padding: 100px 20px 50px;
 }
+.main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
 
+.main-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
 
 /* Skills Section */
 .skills-section {
@@ -217,10 +219,17 @@ body {
     padding: 50px 20px;
 }
 
-.projects h2 {
-    margin-bottom: 40px;
+.projects h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
 .card-container {
     display: flex;
     justify-content: center;
@@ -314,6 +323,7 @@ input[type="submit"]:hover {
 footer {
     text-align: center;
     padding: 15px;
+    
     background-color: #1e1e1e;
     color: #888;
     font-size: 14px;
