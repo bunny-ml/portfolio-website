@@ -338,14 +338,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
-
-/* Prevent content overlap with fixed header */
-.main-content, .projects, .Skill, #certificates, #contact {
-    padding-top: 80px; /* Matches header height + some extra space */
-}
-
-
 #education {
     padding: 40px;
     background-color: #1e1e1e;
