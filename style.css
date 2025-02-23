@@ -159,7 +159,7 @@ body {
     background: transparent;
     color: #fff;
 }
-.skills-section h1 {
+.skills-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #4caf50;
@@ -220,7 +220,7 @@ body {
     padding: 50px 20px;
 }
 
-.projects h1 {
+.projects h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #4caf50;
