@@ -1,6 +1,6 @@
-# abhishek-chaudhary26.github.io
+# portfolio website
 
 
-the site is under development this is going to be first project which will be completed and alunched on github :)
+the site is under development :)
 
-https://abhishek-chaudhary26.github.io
+https://abhishek-chaudhary-portfolio-site.netlify.app/
