@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://abhishek-chaudhary26.github.io/sitemap.xml
+Sitemap: https://abhishek-chaudhary-ml-portfolio.netlify.app/sitemap.xml

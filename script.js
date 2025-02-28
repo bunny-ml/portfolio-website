@@ -106,13 +106,25 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     }
 });
 
-
-
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const navbar = document.getElementById("navbar");
+const navLinks = navbar.querySelectorAll("a"); // Select all links inside the navbar
 
+// Toggle navbar on hamburger click
 hamburgerMenu.addEventListener("click", () => {
-    navbar.classList.toggle("active"); // Toggle the active class
+    navbar.classList.toggle("active");
 });
 
+// Close navbar when a link is clicked
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navbar.classList.remove("active");
+    });
+});
 
+// Close navbar when clicking outside of it
+document.addEventListener("click", (e) => {
+    if (!navbar.contains(e.target) && !hamburgerMenu.contains(e.target)) {
+        navbar.classList.remove("active");
+    }
+});
