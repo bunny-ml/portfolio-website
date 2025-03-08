@@ -3,4 +3,4 @@
 
 the site is under development :)
 
-https://abhishek-chaudhary-portfolio-site.netlify.app/
+https://abhishek-chaudhary-ml-portfolio.netlify.app/
