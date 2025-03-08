@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: right;
     padding: 10px 20px;
-    background-color: #000022;
+    background-color:#121212 ;
     color: #fff;
     position: sticky;
     top: 0;
@@ -276,7 +276,7 @@ body {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #000022;
+    background-color:#121212;
     color: #888;
     font-size: 14px;
 }
