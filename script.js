@@ -128,3 +128,41 @@ document.addEventListener("click", (e) => {
         navbar.classList.remove("active");
     }
 });
+
+document.getElementById('p1').innerHTML = '<a href="https://example.com" target="_blank">Click here</a>';
+gsap.from("#title", {
+    opacity: 0,
+    y: -50,
+    duration: 1,
+    ease: "bounce.out",
+  });
+  
+  gsap.from(".nav-link", {
+    opacity: 0,
+    y: -20,
+    duration: 1,
+    stagger: 0.2,
+  });
+  
+  gsap.from("section", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: "section",
+      start: "top 80%",
+    },
+  });
+  
+  gsap.from(".project-card", {
+    opacity: 0,
+    scale: 0.8,
+    duration: 1,
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: ".project-card",
+      start: "top 90%",
+    },
+  });
+  
