@@ -5,7 +5,7 @@ Welcome to my portfolio website! This platform serves as a showcase of my skills
 ## About Me
 
 - **Name**: Abhishek
-- **Current Education**: B.Tech in Computer Science & Engineering
+- **Education**: B.Tech in Computer Science & Engineering
 - **Location**: Una, Himachal Pradesh, India
 - **Certifications**:
   - Supervised Machine Learning: Regression and Classification (Stanford University, Coursera)
