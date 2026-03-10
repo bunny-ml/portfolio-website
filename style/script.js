@@ -5,17 +5,18 @@ particlesJS('particles-js', {
             "value": 100,
             "density": {
                 "enable": true,
-                "value_area": 800
+                "value_area": 700
             }
         },
         "color": {
-            "value": "#77B254"
+            "value": "#26c859"
         },
+         
         "shape": {
-            "type": "circle",
+            "type": "star",
             "stroke": {
-                "width": 0,
-                "color": "#77B254"
+                "width": 1,
+                "color": "#26c859"
             }
         },
         "opacity": {
@@ -24,35 +25,35 @@ particlesJS('particles-js', {
             "anim": {
                 "enable": true,
                 "speed": 0,
-                "opacity_min": 0.1
+                "opacity_min": 0.3
             }
         },
         "size": {
-            "value": 3,
-            "random": true,
+            "value": 5,
+            "random": false,
             "anim": {
                 "enable": true,
-                "speed": 100,
+                "speed": 5,
                 "size_min": 0.1
             }
         },
-        "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#77B254",
-            "opacity": 0.4,
-            "width": 1
-        },
+        // "line_linked": {
+        //     "enable": true,
+        //     "distance": 150,
+        //     "color": "#ff0000",
+        //     "opacity": 0.4,
+        //     "width": 1
+        // },
         "move": {
             "enable": true,
-            "speed": 3,
+            "speed": 1,
             "direction": "none",
             "random": true,
-            "straight": false,
+            "straight": true,
             "out_mode": "out",
-            "bounce": false,
+            "bounce": true,
             "attract": {
-                "enable": false,
+                "enable": true,
                 "rotateX": 600,
                 "rotateY": 1200
             }
@@ -63,7 +64,7 @@ particlesJS('particles-js', {
         "events": {
             "onhover": {
                 "enable": true,
-                "mode": "grab"
+                "mode": "push"
             },
             "onclick": {
                 "enable": true,
