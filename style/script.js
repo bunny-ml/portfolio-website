@@ -2,75 +2,56 @@
 particlesJS('particles-js', {
     "particles": {
         "number": {
-            "value": 100,
-            "density": {
-                "enable": true,
-                "value_area": 700
-            }
+            "value": 50,
+          
         },
         "color": {
             "value": "#26c859"
         },
          
         "shape": {
-            "type": "star",
+            "type": "circle",
             "stroke": {
-                "width": 1,
+                "width": 0.5,
                 "color": "#26c859"
             }
         },
         "opacity": {
             "value": 1,
-            "random": true,
             "anim": {
-                "enable": true,
+                "enable": false,
                 "speed": 0,
-                "opacity_min": 0.3
+                "opacity_min": 0.9
             }
         },
         "size": {
-            "value": 5,
+            "value": 2,
             "random": false,
             "anim": {
-                "enable": true,
-                "speed": 5,
+                "enable": false,
                 "size_min": 0.1
             }
         },
-        // "line_linked": {
-        //     "enable": true,
-        //     "distance": 150,
-        //     "color": "#ff0000",
-        //     "opacity": 0.4,
-        //     "width": 1
-        // },
-        "move": {
+        "line_linked": {
             "enable": true,
-            "speed": 1,
-            "direction": "none",
-            "random": true,
-            "straight": true,
-            "out_mode": "out",
-            "bounce": true,
-            "attract": {
-                "enable": true,
-                "rotateX": 600,
-                "rotateY": 1200
-            }
-        }
+            "distance": 100,
+            "color": "#050404",
+            "opacity": 0.9,
+            "width": 1
+        },
+     
     },
     "interactivity": {
-        "detect_on": "window",
         "events": {
             "onhover": {
                 "enable": true,
                 "mode": "push"
             },
             "onclick": {
-                "enable": true,
+                "enable": false,
                 "mode": "push"
             },
-            "resize": true
+        
         }
     },
     "retina_detect": true

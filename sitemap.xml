@@ -1,32 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://abhishek-chaudhary-ml-portfolio.netlify.app/</loc>
-  <lastmod>2025-02-22T10:44:06+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://abhishek-chaudhary-website.netlify.app/</loc>
+<lastmod>2026-05-02T07:43:54+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://abhishek-chaudhary-ml-portfolio.netlify.app/resume.pdf</loc>
-  <lastmod>2025-02-22T10:44:06+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://abhishek-chaudhary-website.netlify.app/images/machine-learning.pdf</loc>
+<lastmod>2026-05-02T07:43:54+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abhishek-chaudhary-ml-portfolio.netlify.app/images/certificate1.pdf</loc>
-  <lastmod>2025-02-22T10:44:06+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://abhishek-chaudhary-website.netlify.app/images/supervised-learning.pdf</loc>
+<lastmod>2026-05-02T07:43:54+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abhishek-chaudhary-ml-portfolio.netlify.app/images/certificate2.pdf</loc>
-  <lastmod>2025-02-22T10:44:06+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://abhishek-chaudhary-website.netlify.app/images/advanced_learning_algorithm.pdf</loc>
+<lastmod>2026-05-02T07:43:54+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
+<url>
+<loc>https://abhishek-chaudhary-website.netlify.app/images/unsupervised-learning.pdf</loc>
+<lastmod>2026-05-02T07:43:54+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://abhishek-chaudhary-website.netlify.app/images/java.pdf</loc>
+<lastmod>2026-05-02T07:43:54+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://abhishek-chaudhary-website.netlify.app/ml_projects/ml_projects</loc>
+<lastmod>2026-05-02T07:43:54+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>
