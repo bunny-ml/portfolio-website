@@ -62,7 +62,7 @@ I am open to opportunities, collaborations, and networking in **Cybersecurity, S
 
 - **Email**: abhishek.chaudhary.ml@gmail.com  
 - **LinkedIn**: https://www.linkedin.com/in/abhishek-chaudhary26/  
-- **GitHub**: https://github.com/bunny-ml  
+- **GitHub**: https://github.com/hellboy-zero  
 
 ---
 
