@@ -475,3 +475,197 @@ html {
     background-color: #4caf50;
   }
   
+/* =========================
+   WORK EXPERIENCE TIMELINE
+========================= */
+
+.timeline-section {
+    position: relative;
+    padding: 100px 8%;
+    color: #000000;
+}
+
+.timeline-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 80px;
+    color: #4caf50;
+}
+
+/* Timeline wrapper */
+.timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Center line */
+.timeline-container::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    border-radius: 10px;
+}
+
+/* Timeline item */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.7s ease;
+}
+
+/* Animation active */
+.timeline-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* LEFT SIDE */
+.timeline-item:nth-child(odd) {
+    left: 0;
+    padding-right: 80px;
+}
+
+/* RIGHT SIDE */
+.timeline-item:nth-child(even) {
+    left: 50%;
+    padding-left: 80px;
+}
+
+/* Timeline dots */
+.timeline-dot {
+    position: absolute;
+    top: 35px;
+    width: 20px;
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    z-index: 10;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.5);
+}
+
+/* Dot position */
+.timeline-item:nth-child(odd) .timeline-dot {
+    right: -10px;
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+    left: -10px;
+}
+
+/* =========================
+   TIMELINE CARD
+========================= */
+
+.timeline-content {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+
+    box-shadow: 0px 4px 6px hsla(0, 0%, 0%, 0.5);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    max-width: 420px;
+}
+
+/* Align left cards */
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+}
+
+/* Hover effect */
+.timeline-content:hover {
+    transform: scale(1.03);
+}
+
+/* Date */
+.timeline-date {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    color: #4caf50;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Heading */
+.timeline-content h3 {
+    font-size: 1.3rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Company */
+.timeline-content h4 {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 18px;
+}
+
+/* Text */
+.timeline-content p {
+    color: #000000;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .timeline-section {
+        padding: 80px 5%;
+    }
+
+    .timeline-section h2 {
+        margin-bottom: 60px;
+    }
+
+    /* Move line */
+    .timeline-container::before {
+        left: 20px;
+    }
+
+    /* Full width */
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+
+        padding-left: 60px;
+        padding-right: 10px;
+
+        margin-bottom: 50px;
+    }
+
+    /* Dot position */
+    .timeline-dot {
+        left: 10px !important;
+    }
+
+    .timeline-content {
+        max-width: 100%;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.1rem;
+    }
+}
